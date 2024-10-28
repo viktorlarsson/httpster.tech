@@ -104,7 +104,6 @@ function RootComponent() {
 					commands={COMMANDS}
 				/>
 			</div>
-			<TanStackRouterDevtools position="bottom-right" />
 		</>
 	);
 }
