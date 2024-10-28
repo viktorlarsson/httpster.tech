@@ -13,6 +13,9 @@ export const Route = createFileRoute("/")({
 			"",
 			'Type "help" for available commands or use Tab to autocomplete.',
 			"",
+			"(Currently working on this site, and I will open source it as soon as it is in good shape!)",
+
+			"",
 		];
 
 		useEffect(() => {

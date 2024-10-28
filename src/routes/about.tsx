@@ -13,7 +13,6 @@ const defaultContent = [
 	"",
 	'Type "help" for available commands',
 	"",
-	"(Currently working on this site, and I will open source it as soon as it is in good shape!)",
 ];
 
 export const Route = createFileRoute("/about")({
