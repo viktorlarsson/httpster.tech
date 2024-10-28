@@ -8,7 +8,6 @@ export const Route = createFileRoute("/")({
 		const { output, addOutput } = useTerminalStore();
 		// Default content for /about route
 		const defaultContent = [
-			"",
 			"Hello, I'm Viktor Sarström, a seasoned technology leader with over 18 years of experience in the tech industry.",
 			"",
 			'Type "help" for available commands or use Tab to autocomplete.',
