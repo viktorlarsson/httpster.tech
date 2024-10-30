@@ -21,6 +21,7 @@ export default defineConfig({
 				"src/**/*.d.ts",
 				"src/**/*types/*",
 				"**/*config.ts",
+				"tests/setup.js",
 			],
 		},
 	},
