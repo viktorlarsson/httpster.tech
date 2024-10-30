@@ -38,7 +38,7 @@ export const fileSystem: FileSystem = {
 			"publications.txt": {
 				type: "file",
 				content:
-					"• 2018 | vue-tiny-slider: Open source plugin for Vue 2\n• 2016 | gulp-inject-svg: Open source plugin for Gulp",
+					"• 2022 | Öppna skolplattformen Open source school platform in Sweden\n • 2018 | vue-tiny-slider: Open source plugin for Vue 2\n• 2016 | gulp-inject-svg: Open source plugin for Gulp",
 			},
 		},
 	},
