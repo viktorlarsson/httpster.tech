@@ -1,11 +1,11 @@
 import { useState, useRef, useEffect } from "react";
 
 import { TerminalPrompt } from "./terminal-prompt";
-import { formatDirectoryEntry } from "../types/format-directory-entry";
 import { getCurrentDirectory } from "../utils/get-current-directory";
 import { fileSystem } from "../data/fileSystem";
 import { getCompletions } from "../utils/get-completions";
 import type { CommandOutput } from "../types/command-output";
+import { formatDirectoryEntry } from "../utils/format-directory-entry";
 
 const INTRO_MESSAGE =
 	'Welcome to httpster.tech – your fresh stop for all things tech and innovation! Type "help" for available commands.';
