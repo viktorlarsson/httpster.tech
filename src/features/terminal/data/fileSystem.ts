@@ -4,7 +4,8 @@ export const fileSystem: FileSystem = {
 	about: {
 		type: "directory",
 		description:
-			"With 19 years of experience spanning a broad range of sectors, I am a CTO and full-stack developer based in Gothenburg, focused on building scalable, high-performance products with speed and precision. My expertise lies in AI-driven innovation and operational efficiency, leveraging cutting-edge technology to optimize processes and drive business growth. I’m passionate about engineering impactful solutions, managing projects from architecture and strategy to implementation and scaling, consistently delivering measurable success across diverse industries.",
+			"With 19 years of experience spanning a broad range of sectors, I am a CTO and full-stack developer based in Gothenburg, focused on building scalable, high-performance products with speed and precision. My expertise lies in AI-driven innovation and operational efficiency, leveraging cutting-edge technology to optimize processes and drive business growth. I’m passionate about engineering impactful solutions, managing projects from architecture and strategy to implementation and scaling, consistently delivering measurable success across diverse industries.\n\nTIP! Write 'ls' to find out more about me",
+
 		children: {
 			"introduction.txt": {
 				type: "file",
