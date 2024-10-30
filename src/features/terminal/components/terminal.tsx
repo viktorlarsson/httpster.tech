@@ -10,7 +10,7 @@ import { formatDirectoryEntry } from "../utils/format-directory-entry";
 const INTRO_MESSAGE =
 	'Welcome to httpster.tech – your fresh stop for all things tech and innovation! Type "help" for available commands.';
 
-export function Terminal() {
+export const Terminal = () => {
 	const [currentPath, setCurrentPath] = useState<string[]>([]);
 	const [inputHistory, setInputHistory] = useState<string[]>([]);
 	const [historyIndex, setHistoryIndex] = useState(-1);
@@ -299,4 +299,4 @@ export function Terminal() {
 			</div>
 		</div>
 	);
-}
+};
