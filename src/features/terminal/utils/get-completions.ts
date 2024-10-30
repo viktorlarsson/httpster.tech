@@ -10,7 +10,6 @@ export const getCompletions = (
 	const [command = "", ...args] = input.trim().split(" ");
 	const lastArg = args[args.length - 1] || "";
 
-	// Only provide completions for cd and cat commands
 	if (!["cd", "cat"].includes(command.toLowerCase())) {
 		return [];
 	}
@@ -19,9 +18,8 @@ export const getCompletions = (
 	const matchingEntries = entries
 		.filter(([name]) => name.startsWith(lastArg))
 		.map(([name, item]) => {
-			// Add trailing slash for directories when completing 'cd' command
 			if (command === "cd" && item.type === "directory") {
-				return name + "/";
+				return `${name}/`;
 			}
 			return name;
 		});

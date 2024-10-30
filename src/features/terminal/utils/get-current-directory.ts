@@ -1,4 +1,4 @@
-import { FileSystem } from "../types/file-system";
+import type { FileSystem } from "../types/file-system";
 import { fileSystem } from "../data/fileSystem";
 
 export const getCurrentDirectory = (
