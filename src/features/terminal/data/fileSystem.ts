@@ -65,6 +65,11 @@ export const fileSystem: FileSystem = {
 				content: "linkedin.link",
 				url: "https://x.com/viktorsarstrom",
 			},
+			thisGithubRepository: {
+				type: "file",
+				content: "this.repository.link",
+				url: "https://github.com/viktorlarsson/httpster.tech",
+			},
 		},
 	},
 };
