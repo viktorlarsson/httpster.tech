@@ -10,7 +10,7 @@ import { useThemeStore } from "../../../shared/hooks/useThemeStore";
 import { op } from "@/shared/utils/op";
 
 const INTRO_MESSAGE =
-	'Welcome to httpster.tech – your fresh stop for all things tech and innovation! Type "help" for available commands.';
+	'I build scalable products at speed, CTO and full stack developer from Gothenburg. Focused on AI-driven innovation and process optimization. Passionate about engineering solutions and harnessing AI to fuel business growth.\n\nType "help" for available commands.';
 
 export const Terminal = () => {
 	const { setMode } = useThemeStore();
