@@ -51,4 +51,4 @@ bun run lint
 # Shoutout
 
 - [OpenPanel](https://openpanel.dev)
-- [Vercl](https://vercel.com)
+- [Vercel](https://vercel.com)
