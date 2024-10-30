@@ -23,7 +23,7 @@ export default defineConfig({
 				"**/*config.ts",
 				"tests/setup.js",
 				// Just a static file, no need for testing
-				"src/terminal/data/fileSystem.ts",
+				"src/features/terminal/data/fileSystem.ts",
 			],
 		},
 	},
