@@ -8,6 +8,7 @@ TBD.
 - [Tanstack Start](https://tanstack.com/start/latest)
 - [React 19](https://react.dev/)
 - [biome](https://biomejs.dev/)
+- [vitest](https://vitest.dev/)
 
 ## Getting started
 
@@ -25,6 +26,11 @@ bun install
 Run dev
 ```bash
 bun run dev
+```
+
+Run test
+```bash
+bun run test
 ```
 
 ## Currently working on
