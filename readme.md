@@ -29,5 +29,6 @@ bun run dev
 
 ## Currently working on
 - Use router when navigating between directories
+- Create useTerminalStore
 - Unit tests
 - Visual regression test
