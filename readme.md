@@ -47,3 +47,8 @@ bun run lint
 - Create articles / blogpost using markdown
 - Unit tests
 - Visual regression test
+
+# Shoutout
+
+- [OpenPanel](https://openpanel.dev)
+- [Vercl](https://vercel.com)
