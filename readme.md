@@ -2,6 +2,9 @@
 
 TBD.
 
+
+[![codecov](https://codecov.io/github/viktorlarsson/httpster.tech/graph/badge.svg?token=YPMHYLOIKS)](https://codecov.io/github/viktorlarsson/httpster.tech)
+
 ## Key Technologies
 
 - [bun](https://bun.sh/)
