@@ -7,6 +7,7 @@ import { getCompletions } from "../utils/get-completions";
 import type { CommandOutput } from "../types/command-output";
 import { formatDirectoryEntry } from "../utils/format-directory-entry";
 import { useThemeStore } from "../../../shared/hooks/useThemeStore";
+import { op } from "@/shared/utils/op";
 
 const INTRO_MESSAGE =
 	'Welcome to httpster.tech – your fresh stop for all things tech and innovation! Type "help" for available commands.';
@@ -31,6 +32,8 @@ export const Terminal = () => {
 	): { response: string; isUrl?: boolean; isHtml?: boolean } => {
 		const args = command.trim().split(" ");
 		const cmd = args[0]?.toLowerCase() || "";
+
+		op.track("navigate", { cmd });
 
 		switch (cmd) {
 			case "ls": {

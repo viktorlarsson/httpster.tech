@@ -28,6 +28,7 @@
 		"@biomejs/biome": "^1.9.4"
 	},
 	"dependencies": {
+		"@openpanel/web": "^1.0.1",
 		"@tanstack/react-router": "^1.77.0",
 		"@testing-library/react": "^16.0.1",
 		"@vitest/coverage-v8": "^2.1.4",
