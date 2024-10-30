@@ -6,11 +6,14 @@ import { fileSystem } from "../data/fileSystem";
 import { getCompletions } from "../utils/get-completions";
 import type { CommandOutput } from "../types/command-output";
 import { formatDirectoryEntry } from "../utils/format-directory-entry";
+import { useThemeStore } from "../../../shared/hooks/useThemeStore";
 
 const INTRO_MESSAGE =
 	'Welcome to httpster.tech – your fresh stop for all things tech and innovation! Type "help" for available commands.';
 
 export const Terminal = () => {
+	const { setMode } = useThemeStore();
+
 	const [currentPath, setCurrentPath] = useState<string[]>([]);
 	const [inputHistory, setInputHistory] = useState<string[]>([]);
 	const [historyIndex, setHistoryIndex] = useState(-1);
@@ -128,10 +131,29 @@ export const Terminal = () => {
   open <file.link>     Open URL associated with file.link
   clear           Clear the terminal
   help            Show this help message
+  light           Switch to light mode
+  dark            Switch to dark mode
   
   - You can use tab to autocomplete
   `,
 				};
+
+			case "dark": {
+				console.log("Dark mode command triggered");
+
+				setMode("dark");
+				return {
+					response: "Dark mode on — much better",
+				};
+			}
+			case "light": {
+				console.log("Light command triggered");
+
+				setMode("light");
+				return {
+					response: "Fine, light mode it is. Hope you brought sunglasses",
+				};
+			}
 
 			default:
 				return {
