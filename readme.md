@@ -43,9 +43,8 @@ bun run lint
 
 ## Currently working on
 - Use router when navigating between directories
-- Create useTerminalStore
-- Create articles / blogpost using markdown
-- Unit tests
+- Split out terminal to more clean code
+- Create articles / blogpost
 - Visual regression test
 
 # Shoutout
