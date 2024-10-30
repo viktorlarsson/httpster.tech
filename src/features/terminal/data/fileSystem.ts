@@ -15,7 +15,7 @@ export const fileSystem: FileSystem = {
 			"skills.txt": {
 				type: "file",
 				content:
-					"• Frontend: React, Vue, VanillaJS\n• Backend: Node.js, C#, Java, PHP\n• DevOps: Docker, Kubernetes, Serverless\n• Databases: MongoDB, MySQL, RDS\n• Cloud: AWS, Azure, GCP",
+					"• Frontend: NextJS, Tanstack Start, React, Vue, VanillaJS\n• Backend: Node.js, C#, Java, PHP\n• DevOps: Docker, Kubernetes, Serverless\n• Databases: MongoDB, MySQL, RDS\n• Cloud: AWS, Azure, GCP",
 			},
 			"experience.txt": {
 				type: "file",
