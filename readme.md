@@ -1,8 +1,8 @@
-# Welcome to httpster.tech
+# httpster.tech
 
 TBD.
 
-
+![vercel deploy](https://deploy-badge.vercel.app/?url=https://httpster.tech&name=vercel)
 [![codecov](https://codecov.io/github/viktorlarsson/httpster.tech/graph/badge.svg?token=YPMHYLOIKS)](https://codecov.io/github/viktorlarsson/httpster.tech)
 
 ## Key Technologies
