@@ -125,9 +125,12 @@ export const Terminal = () => {
   ls              List directory contents
   cd <dir>        Change directory (cd .. to go back)
   cat <file>      Display file contents
-  open <file>     Open URL associated with file
+  open <file.link>     Open URL associated with file.link
   clear           Clear the terminal
-  help            Show this help message`,
+  help            Show this help message
+  
+  - You can use tab to autocomplete
+  `,
 				};
 
 			default:
