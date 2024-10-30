@@ -227,20 +227,19 @@ export function Terminal() {
 			setCompletionIndex(-1);
 		}
 	};
+	useEffect(() => {
+		if (output && terminalRef.current) {
+			terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
+		}
+	}, [output]);
 
 	useEffect(() => {
 		inputRef.current?.focus();
 	}, []);
 
-	useEffect(() => {
-		if (terminalRef.current) {
-			terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
-		}
-	}, []);
-
 	return (
 		<div
-			className="mx-auto"
+			className="flex flex-col h-[100vh] mx-auto pb-4"
 			onClick={() => inputRef.current?.focus()}
 			onKeyDown={(e) => {
 				if (e.key === "Enter") {
@@ -250,7 +249,7 @@ export function Terminal() {
 			}}
 		>
 			{" "}
-			<div ref={terminalRef} className="h-[calc(100vh-8rem)] overflow-y-auto">
+			<div ref={terminalRef} className="flex-grow overflow-y-auto">
 				{output.map((entry) => (
 					<div key={entry.command} className="mb-2">
 						{entry.command && !entry.isIntro && (

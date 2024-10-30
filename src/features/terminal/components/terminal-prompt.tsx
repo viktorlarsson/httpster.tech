@@ -5,7 +5,10 @@ interface TerminalPromptProps {
 export const TerminalPrompt = ({ currentPath }: TerminalPromptProps) => {
 	return (
 		<span className="opacity-75">
-			(base) httpster.tech@MacBook-Pro:~
+			<span className="hidden sm:inline">
+				(base) httpster.tech@MacBook-Pro:~
+			</span>
+			<span className="sm:hidden">~</span>
 			{currentPath.length > 0 ? `/${currentPath.join("/")}` : ""}$
 		</span>
 	);
