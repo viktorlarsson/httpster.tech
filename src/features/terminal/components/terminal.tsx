@@ -33,7 +33,7 @@ export const Terminal = () => {
 		const args = command.trim().split(" ");
 		const cmd = args[0]?.toLowerCase() || "";
 
-		op.track("navigate", { cmd });
+		op.track("navigate", { cmd, args });
 
 		switch (cmd) {
 			case "ls": {
