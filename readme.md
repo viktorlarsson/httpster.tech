@@ -30,5 +30,6 @@ bun run dev
 ## Currently working on
 - Use router when navigating between directories
 - Create useTerminalStore
+- Create articles / blogpost using markdown
 - Unit tests
 - Visual regression test
