@@ -36,6 +36,11 @@ Run test
 bun run test
 ```
 
+Run lint
+```bash
+bun run lint
+```
+
 ## Currently working on
 - Use router when navigating between directories
 - Create useTerminalStore
