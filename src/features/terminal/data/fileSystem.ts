@@ -35,7 +35,7 @@ export const fileSystem: FileSystem = {
 				type: "file",
 				content: "• Swedish: Native\n• English: Fluent",
 			},
-			"publications.txt": {
+			"opensource.txt": {
 				type: "file",
 				content:
 					"• 2022 | Öppna skolplattformen Open source school platform in Sweden\n • 2018 | vue-tiny-slider: Open source plugin for Vue 2\n• 2016 | gulp-inject-svg: Open source plugin for Gulp",
