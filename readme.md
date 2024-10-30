@@ -8,7 +8,7 @@ TBD.
 - [Tanstack Start](https://tanstack.com/start/latest)
 - [React 19](https://react.dev/)
 - [biome](https://biomejs.dev/)
-- [vitest](https://biomejs.dev/](https://vitest.dev/)
+- [vitest](https://vitest.dev/)
 
 ## Getting started
 
