@@ -9,6 +9,17 @@ export default defineConfig({
 	test: {
 		setupFiles: ["./vitest-setup.ts"],
 		environment: "jsdom",
+		globals: true,
+		coverage: {
+			provider: "v8",
+			exclude: [
+				"app.config.ts",
+				"postcss.config.js",
+				"tailwind.config.ts",
+				"src/routeTree.gen.ts",
+				"src/main.tsx",
+			],
+		},
 	},
 	resolve: {
 		alias: {
