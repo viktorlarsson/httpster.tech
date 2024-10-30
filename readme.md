@@ -2,7 +2,7 @@
 
 TBD.
 
-![vercel deploy](https://deploy-badge.vercel.app/?url=https://httpster.tech&name=vercel)
+[![vercel deploy](https://deploy-badge.vercel.app/?url=https://httpster.tech&name=vercel)](https://httpster.tech)
 [![codecov](https://codecov.io/github/viktorlarsson/httpster.tech/graph/badge.svg?token=YPMHYLOIKS)](https://codecov.io/github/viktorlarsson/httpster.tech)
 
 ## Key Technologies
