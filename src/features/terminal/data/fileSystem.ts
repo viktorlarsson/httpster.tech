@@ -4,7 +4,7 @@ export const fileSystem: FileSystem = {
 	about: {
 		type: "directory",
 		description:
-			"Hello! I'm a passionate software developer with a love for creating innovative solutions.\n\nWith over 19 years of experience in full-stack development, I've had the privilege of working on diverse projects that have shaped my expertise.",
+			"Hello! I'm a passionate software developer with a love for creating innovative solutions.\n\nWith over 19 years of experience in full-stack development, I've had the privilege of working on diverse projects that have shaped my expertise.\n\nTIP! Write 'ls' to find out more about me",
 		children: {
 			"introduction.txt": {
 				type: "file",
