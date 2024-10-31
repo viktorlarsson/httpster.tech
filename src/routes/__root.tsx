@@ -11,7 +11,7 @@ export const Route = createRootRoute({
 		return (
 			<div
 				className={`min-h-screen ${
-					mode === "dark" ? "bg-black text-white" : "bg-white text-zinc-400"
+					mode === "dark" ? "bg-black text-white" : "bg-white text-black"
 				} p-4 font-mono`}
 			>
 				<TerminalHeader />
