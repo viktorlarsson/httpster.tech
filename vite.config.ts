@@ -21,7 +21,10 @@ export default defineConfig({
 				"src/**/*.d.ts",
 				"src/**/*types/*",
 				"**/*config.ts",
+				"src/**/*routes/*",
 				"tests/setup.js",
+				// open panel, I guess they have tests
+				"src/shared/utils/op.ts",
 				// Just a static file, no need for testing
 				"src/features/terminal/data/fileSystem.ts",
 			],

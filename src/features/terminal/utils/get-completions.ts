@@ -5,7 +5,12 @@ export const getCompletions = (
 	currentPath: string[],
 ): string[] => {
 	const currentDir = getCurrentDirectory(currentPath);
-	if (!currentDir) return [];
+
+	// Ensure `currentDir` is not null and has children
+	const entries = currentDir?.children
+		? Object.entries(currentDir.children)
+		: [];
+	if (!entries.length) return [];
 
 	const [command = "", ...args] = input.trim().split(" ");
 	const lastArg = args[args.length - 1] || "";
@@ -14,7 +19,6 @@ export const getCompletions = (
 		return [];
 	}
 
-	const entries = Object.entries(currentDir);
 	const matchingEntries = entries
 		.filter(([name]) => name.startsWith(lastArg))
 		.map(([name, item]) => {
