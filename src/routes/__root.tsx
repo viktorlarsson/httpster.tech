@@ -1,4 +1,3 @@
-import { Terminal } from "@/features/terminal/components/terminal";
 import { createRootRoute, Outlet } from "@tanstack/react-router";
 import "unfonts.css";
 import "../index.css";
