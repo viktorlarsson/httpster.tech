@@ -49,10 +49,10 @@ export const Terminal = ({ initialPath }: TerminalProps) => {
 	}, []);
 
 	useEffect(() => {
-		if (terminalRef.current) {
+		if (output && terminalRef.current) {
 			terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
 		}
-	}, []);
+	}, [output]);
 
 	return (
 		<div
@@ -65,7 +65,7 @@ export const Terminal = ({ initialPath }: TerminalProps) => {
 				}
 			}}
 		>
-			<div ref={terminalRef} className="h-[calc(100vh-16rem)] overflow-y-auto">
+			<div ref={terminalRef} className="h-[calc(100vh-8px)] overflow-y-auto">
 				<TerminalOutput output={output} />
 
 				<TerminalInput
