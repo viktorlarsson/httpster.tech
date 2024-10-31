@@ -49,14 +49,14 @@ export const Terminal = ({ initialPath }: TerminalProps) => {
 	}, []);
 
 	useEffect(() => {
-		if (output && terminalRef.current) {
-			terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
+		if (output) {
+			const scrollContainer = document.documentElement || document.body;
+			scrollContainer.scrollTop = scrollContainer.scrollHeight;
 		}
 	}, [output]);
-
 	return (
 		<div
-			className="flex flex-col h-[100vh] mx-auto pb-4"
+			className="flex flex-col mx-auto pb-4"
 			onClick={() => inputRef.current?.focus()}
 			onKeyDown={(e) => {
 				if (e.key === "Enter") {
@@ -65,7 +65,7 @@ export const Terminal = ({ initialPath }: TerminalProps) => {
 				}
 			}}
 		>
-			<div ref={terminalRef} className="h-[calc(100vh-8px)] overflow-y-auto">
+			<div ref={terminalRef} className="">
 				<TerminalOutput output={output} />
 
 				<TerminalInput
