@@ -7,8 +7,7 @@ export function createRouter() {
 	const queryClient: QueryClient = new QueryClient({
 		defaultOptions: {
 			queries: {
-				// Set any global query options here if needed
-				staleTime: 5 * 60 * 1000, // Example: 5 minutes
+				staleTime: 5 * 60 * 1000,
 			},
 		},
 	});
