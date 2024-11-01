@@ -3,7 +3,7 @@ import { useRouter } from "@tanstack/react-router";
 import { formatDirectoryEntry } from "../utils/format-directory-entry";
 import { getCurrentDirectory } from "../utils/get-current-directory";
 import type { CommandOutput } from "../types/command-output";
-import { useThemeStore } from "@/shared/hooks/useThemeStore";
+import { useThemeStore } from "../../../shared/hooks/useThemeStore";
 import useInitialDirectoryDescription from "./useInitialDirectoryDescription";
 
 export const useTerminalCommands = (initialPath: string[]) => {
