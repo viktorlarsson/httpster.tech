@@ -3,8 +3,9 @@ import type { QueryClient } from "@tanstack/react-query";
 import { createRootRouteWithContext } from "@tanstack/react-router";
 import { Outlet, ScrollRestoration } from "@tanstack/react-router";
 import { Body, Head, Html, Meta, Scripts } from "@tanstack/start";
+import { DefaultCatchBoundary } from "~/shared/components/DefaultCatchBoundary";
 
-import "../index.css";
+import appCss from "~/styles/app.css?url";
 
 export const Route = createRootRouteWithContext<{
 	queryClient: QueryClient;
@@ -22,6 +23,14 @@ export const Route = createRootRouteWithContext<{
 		},
 	],
 	component: RootComponent,
+	links: () => [{ rel: "stylesheet", href: appCss }],
+	errorComponent: (props) => {
+		return (
+			<RootDocument>
+				<DefaultCatchBoundary {...props} />
+			</RootDocument>
+		);
+	},
 });
 
 function RootComponent() {
