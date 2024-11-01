@@ -4,7 +4,6 @@ import { createRootRouteWithContext } from "@tanstack/react-router";
 import { Outlet, ScrollRestoration } from "@tanstack/react-router";
 import { Body, Head, Html, Meta, Scripts } from "@tanstack/start";
 import { DefaultCatchBoundary } from "~/shared/components/DefaultCatchBoundary";
-
 import appCss from "~/styles/app.css?url";
 
 export const Route = createRootRouteWithContext<{
