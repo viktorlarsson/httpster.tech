@@ -47,12 +47,6 @@ Run lint
 bun run lint
 ```
 
-## Currently working on
-- Use router when navigating between directories
-- Split out terminal to more clean code
-- Create articles / blogpost
-- Visual regression test
-
 # Shoutout
 
 - [OpenPanel](https://openpanel.dev)
