@@ -16,17 +16,17 @@ export default defineConfig({
 				"app.config.ts",
 				"postcss.config.js",
 				"tailwind.config.ts",
-				"src/routeTree.gen.ts",
-				"src/main.tsx",
-				"src/**/*.d.ts",
-				"src/**/*types/*",
+				"app/routeTree.gen.ts",
+				"app/main.tsx",
+				"app/**/*.d.ts",
+				"app/**/*types/*",
 				"**/*config.ts",
-				"src/**/*routes/*",
+				"app/**/*routes/*",
 				"tests/setup.js",
 				// open panel, I guess they have tests
-				"src/shared/utils/op.ts",
+				"app/shared/utils/op.ts",
 				// Just a static file, no need for testing
-				"src/features/terminal/data/fileSystem.ts",
+				"app/features/terminal/data/fileSystem.ts",
 			],
 		},
 	},
@@ -43,7 +43,7 @@ export default defineConfig({
 				families: [
 					{
 						name: "Geist-Mono",
-						src: "./src/assets/fonts/geist-mono/*.woff2",
+						src: "./app/assets/fonts/geist-mono/*.woff2",
 					},
 				],
 			},
