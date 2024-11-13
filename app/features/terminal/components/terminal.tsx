@@ -49,14 +49,13 @@ export const Terminal = ({ initialPath }: TerminalProps) => {
   }, []);
 
   useEffect(() => {
-    const terminalElement = terminalRef.current;
-    if (
-      terminalElement &&
-      terminalElement.scrollHeight > terminalElement.clientHeight
-    ) {
-      terminalElement.scrollTop = terminalElement.scrollHeight;
+    if (output) {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth",
+      });
     }
-  }, []);
+  }, [output]);
 
   return (
     <div
@@ -71,6 +70,7 @@ export const Terminal = ({ initialPath }: TerminalProps) => {
     >
       <div ref={terminalRef} className="">
         <TerminalOutput output={output} />
+
         <TerminalInput
           currentPath={currentPath}
           currentInput={currentInput}
@@ -78,6 +78,7 @@ export const Terminal = ({ initialPath }: TerminalProps) => {
           onKeyDown={handleKeyDown}
           inputRef={inputRef}
         />
+
         {completions.length > 1 && (
           <div className="mt-2">
             {completions.map((completion, index) => (
