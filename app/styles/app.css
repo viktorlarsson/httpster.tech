@@ -3,7 +3,7 @@
 @tailwind utilities;
 @layer base {
 	:root {
-		font-family: Geist, serif;
+		font-family: "Geist Mono", monospace;
 
 		--background: 0 0% 100%;
 		--foreground: 0 0% 3.9%;
